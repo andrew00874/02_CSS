@@ -1,0 +1,50 @@
+body {
+    max-width: 900px;   /* 0 ~ 900px 까지의 범위 설정 */
+    margin : 0 auto;    /* 상하 = 0 좌우 = 자동 여백 설정 */
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: #fff;
+}
+
+pre {
+    background: #2d3748;
+    font-size: 14px;
+    padding: 15px;
+    color: #e2e8f0;
+    border-radius: 8px;
+}
+
+p {
+    background: white;
+    padding : 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section {
+    margin-bottom: 40px; /* 아래로 여백 40px 만 제공 */
+    padding: 20px; /* 상하좌우로 내 몸집을 20px 키우자 */
+    border-radius: 10px; /* 모서리 둥글기를 상하좌우로 10px 만들자 */
+    background: #f8f9ff;
+}
+
+.gd-1{
+    background: #4ecdc4
+    repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 10px,
+        rgba(255, 255, 255, 0.1) 10px,
+        rgba(255, 255, 255, 0.1) 20px
+    );
+}
+
+.gd-2{
+}

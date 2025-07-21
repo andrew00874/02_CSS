@@ -28,25 +28,60 @@
                 포함된 완벽한 세트메뉴입니다.
             </p>
             <div class="price">
-                <h5>9,500원</h5>
-                <p>⭐⭐⭐⭐⭐</p>
-                <span>(4.9/5.0)</span>
+                <h5>15,000원</h5>
+                <p>⭐⭐⭐⭐☆</p>
+                <span>(4.5/5.0)</span>
             </div>
             <div class="재료리스트" id="ingredients">
-                <span class="재료아이템"></span>
-                <span class="재료아이템"></span>
-                <span class="재료아이템"></span>
-                <span class="재료아이템"></span>
-                <span class="재료아이템"></span>
+                <span class="재료아이템">수제 패티</span>
+                <span class="재료아이템">체다 치즈</span>
+                <span class="재료아이템">양상추</span>
+                <span class="재료아이템">토마토</span>
+                <span class="재료아이템">양파</span>
+                <span class="재료아이템">피클</span>
+                <span class="재료아이템">특제 소스</span>
+                <span class="재료아이템">브리오슈 번</span>
+                <span class="재료아이템">감자튀김</span>
+                <span class="재료아이템">콜라</span>
+
             </div>
             <div class="order-list">
                 <div class="order-item">
-                    <strong></strong>
+                    <strong>기본 세트</strong>
+                    <strong>(버거 + 감자튀김 + 콜라)</strong>
+                    <p>15,000원</p>
                 </div>
+                <div class="order-item">
+                    <strong>디럭스 세트</strong>
+                    <strong>(버거 + 감자튀김 + 어니언링 + 콜라)</strong>
+                    <p>18,000원</p>
+                </div>
+                <div class="order-item">
+                    <strong>라지 세트</strong>
+                    <strong>(더블패티 + 감자튀김 + 콜라)</strong>
+                    <p>20,000원</p>
+                </div>
+            </div>
+            <div class="store-info" id="restaurant">
+                <strong>
+                    매장명 : 버거킹덤 강남점<br />
+                    주소 : 서울시 강남구 버거로 456<br />
+                    전화번호 : 02-5678-9012<br />
+                    영업시간 : 10:00 - 23:00 (연중무휴)<br />
+                    배달 시간 : 25-35분<br />
+                    최소 주문 금액 : 12,000원
+                </strong>
             </div>
             </div>
 
          </div>
     </div>
-</body>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector('.nav');
+      hamburger.addEventListener('click', () => {
+        nav.classList.toggle("show");
+      });
+    </script>
+  </body>
 </html>

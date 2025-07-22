@@ -24,7 +24,7 @@
       -->
       <form action="#">
         <!--기본정보-->
-        <fieldset>
+        <fieldset class="input-field">
           <legend>기본 정보</legend>
           <label>
             이름 :
@@ -54,6 +54,15 @@
               value="25"
             />
           </label>
+          <span id="ageValue">25</span>
+          <script>
+            const ageSlider = document.getElementById("userage");
+            const ageValueSpan = document.getElementById("ageValue");
+
+            ageSlider.addEventListener("input", function () {
+              ageValueSpan.textContent = ageSlider.value;
+            });
+          </script>
           <label>
             전화번호 :
             <!--
@@ -74,7 +83,7 @@
             />
           </label>
         </fieldset>
-        <fieldset>
+        <fieldset class="choice-field">
           <legend>음식 선호도</legend>
           <p>좋아하는 음식 종류 (중복 선택 가능)</p>
           <label>
@@ -109,7 +118,7 @@
           </label>
         </fieldset>
         <!-- 맛집 이미지 html 코드를 작성할 때 어디서부터 어디까지 어떤 코드를 작성했는지 표기-->
-        <fieldset>
+        <fieldset class="choice-field">
           <legend>맛집 사진 1탄</legend>
           <!-- 현재 컴퓨터에서 이미지 파일 가져오기 -->
           <img
@@ -132,7 +141,7 @@
             어떤 이미지의 위치인지 알려주는 것.
             -->
         </fieldset>
-        <fieldset>
+        <fieldset class="choice-field">
           <legend>맛집 사진 2탄</legend>
           <!-- 현재 컴퓨터에서 이미지 파일 가져오기 -->
           <img
@@ -151,7 +160,7 @@
           </label>
         </fieldset>
         <!-- 유튜브 영상 -->
-        <fieldset>
+        <fieldset class="choice-field">
           <legend>맛집 소개 영상</legend>
           <p>유명한 맛집 리뷰 영상을 시청해보세요!</p>
           <iframe
@@ -174,15 +183,29 @@
             도움안됨👎
           </label>
         </fieldset>
-        <fieldset>
-            <legend>맛집 위치</legend>
-            <p>서울 맛집 밀집 지역 - 종각역 주변</p>
-            <p>이 지역에 가본 적이 있나요? (방문한 경우만 체크)</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.6302578410728!2d126.98190157551939!3d37.563774124287036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f1c7af3d5f%3A0x50d5593269776722!2z66qF64-Z6rGw66as!5e0!3m2!1sko!2skr!4v1753150179544!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br />
-            <label>
-                <input type="checkbox" id="visited" name="visited" value="visited" />
-                네, 가본 적 있어요.
-            </label>
+        <fieldset class="choice-field">
+          <legend>맛집 위치</legend>
+          <p>서울 맛집 밀집 지역 - 종각역 주변</p>
+          <p>이 지역에 가본 적이 있나요? (방문한 경우만 체크)</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.6302578410728!2d126.98190157551939!3d37.563774124287036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2f1c7af3d5f%3A0x50d5593269776722!2z66qF64-Z6rGw66as!5e0!3m2!1sko!2skr!4v1753150179544!5m2!1sko!2skr"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <br />
+          <label>
+            <input
+              type="checkbox"
+              id="visited"
+              name="visited"
+              value="visited"
+            />
+            네, 가본 적 있어요.
+          </label>
         </fieldset>
         <!-- 제출 버튼 -->
         <button type="submit">제출하기</button>

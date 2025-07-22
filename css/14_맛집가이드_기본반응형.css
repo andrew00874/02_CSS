@@ -285,6 +285,10 @@ input select textarea 태그에
   margin-bottom: 15px;
 }
 
+.menu-img {
+  background-color: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+}
+
 .price {
   background-color: white;
   padding: 20px;
